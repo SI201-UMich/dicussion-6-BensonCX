@@ -111,10 +111,10 @@ class PollReader():
                 trump_sum += self.data_dict['Trump result'][i]
                 count += 1
 
-            if count > 0:
-                return (harris_sum / count, trump_sum / count)
-            else:
-                return (0.0, 0.0)
+        if count > 0:
+            return (harris_sum / count, trump_sum / count)
+        else:
+            return (0.0, 0.0)
             
         pass
 
